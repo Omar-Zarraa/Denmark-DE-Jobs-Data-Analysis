@@ -44,3 +44,30 @@ plt.show()
 
 - SQL is a very important skill to learn for any data role with it taking the top place in 2 of the 3 roles.
 - Python is as valuable as SQL due to its versatility and wide adoptation across many different data and software roles.
+
+## 2. How are in-demand skills trending for Data Engineers?
+
+### Visualize Data
+
+```python
+df_DE_DK_percent = df_DE_DK_pivot.div(DE_totals / 100, axis=0)
+
+df_DE_DK_percent = df_DE_DK_percent.reset_index()
+df_DE_DK_percent["job_posted_month"] = df_DE_DK_percent["job_posted_mo"].apply(
+    lambda x: pd.to_datetime(x, format="%m").strftime("%b")
+)
+df_DE_DK_percent = df_DE_DK_percent.set_index("job_posted_month")
+df_DE_DK_percent = df_DE_DK_percent.drop(columns="job_posted_mo")
+
+df_DE_DK_percent
+```
+
+### Results
+
+![Visualization](./images/Trending%20Top%20Skills%20for%20Data%20Engineers%20in%20Denmark.png)
+
+### Insights
+
+- Python and SQL always fight for the top spot showing their incredible importance for anyone aspiring to be a Data Engineer in Denmark.
+- AWS, Azure, and Databricks remain on the lower side of demand but they are very important still.
+- Azure has lost popularity over time while AWS is growing in demand.
