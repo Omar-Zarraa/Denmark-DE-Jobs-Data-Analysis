@@ -71,3 +71,59 @@ df_DE_DK_percent
 - Python and SQL always fight for the top spot showing their incredible importance for anyone aspiring to be a Data Engineer in Denmark.
 - AWS, Azure, and Databricks remain on the lower side of demand but they are very important still.
 - Azure has lost popularity over time while AWS is growing in demand.
+
+## 3. How well do jobs and skills pay for Data Analytics?
+
+### Salary Analysis for Data Nerds
+
+### Visualize data
+```python
+sns.boxplot(data=df_DK_top6, x='salary_year_avg', y='job_title_short',order=job_order)
+sns.set_theme(style='ticks')
+
+plt.title('Salary Distributions in Denmark')
+plt.xlabel('Yearly Salary (USD)')
+plt.ylabel('')
+plt.xlim(0, 250000) 
+ticks_x = plt.FuncFormatter(lambda y, pos: f'${int(y/1000)}K')
+plt.gca().xaxis.set_major_formatter(ticks_x)
+plt.show()
+```
+
+### Results
+
+![Visualization](./images/Salary%20Distributions%20in%20Denmark.png)
+
+### Insights
+
+- Machine Learning Engineers have the most pay on average while Data Scientists have a much more varied pay distribution which could indicate companies hiring more Data Scientists than ML Engineers.
+
+## 3. How well do jobs and skills pay for Data Engineers?
+
+### Visualize Data
+
+```python
+ax=plt.gca()
+
+sns.set_theme(style='ticks')
+
+sns.barplot(data=df_DE_top_pay, x='median', y=df_DE_top_pay.index, hue='median', ax=ax, palette='flare')
+ax.legend().remove()
+
+ax.set_title('Top 10 Highest Paid Skills for Data Engineers')
+ax.set_ylabel('')
+ax.set_xlabel('')
+ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f'${int(x/1000)}K'))
+
+plt.tight_layout()
+plt.show()
+```
+
+### Results
+
+![Visualization](./images/Highest%20Paid%20Skills%20for%20DE.png)
+
+### Insights
+
+- Less required and popular skills such as jenkins and oracle tend to pay more than the more popular skills such as sql and python.
+- The pay gap between them indicates a gap in the market for people proficient in these more paid skills.
