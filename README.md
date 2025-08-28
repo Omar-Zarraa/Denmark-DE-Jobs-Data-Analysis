@@ -1,3 +1,24 @@
+# Overview
+
+Welcome to my Data Analysis project. This project analyses many aspects of the Data Engineering role in Denmark. It shows some relevant and important information about the Dane job market for Data Engineers. This project was made as the final project for [Luke Barousse's Python for Data Analytics course](https://www.youtube.com/watch?v=wUSDVGivd-8&t=35072s). Many thanks go to him and his amazing teaching skills for the tools used in this project.
+
+# The Questions
+
+These are the questions I aimed to answer in my project:
+
+- What are the most demanded skills for the top 3 most popular data roles?
+- How are in-demand skills trending for Data Engineers?
+-How well do jobs and skills pay for Data Analytics?
+- How well do jobs and skills pay for Data Engineers?
+
+# Tools I used
+
+- Python:
+    - Pandas: essential for data manipulation and cleaning.
+    - Matplotlib: the base for all the plots in this project.
+    - Seaborn: extra utilities for making the plots more readable.
+- Jupyter Notebooks: very useful tool when it comes to using Python for data analytics, streamlines the process by a lot.
+
 # The Analysis
 
 ## 1. What are the most demanded skills for the top 3 most popular data roles?
@@ -98,7 +119,7 @@ plt.show()
 
 - Machine Learning Engineers have the most pay on average while Data Scientists have a much more varied pay distribution which could indicate companies hiring more Data Scientists than ML Engineers.
 
-## 3. How well do jobs and skills pay for Data Engineers?
+## 4. How well do jobs and skills pay for Data Engineers?
 
 ### Visualize Data
 
@@ -127,3 +148,13 @@ plt.show()
 
 - Less required and popular skills such as jenkins and oracle tend to pay more than the more popular skills such as sql and python.
 - The pay gap between them indicates a gap in the market for people proficient in these more paid skills.
+
+# What I learned
+
+- I learned a lot about data analysis, from data cleaning to data plotting and everything in between.
+- **Data Analysis skills:** finding the data to support what you intend to show, extracting insights from that data, and finding more data to further support those insights.
+- **Python data analysis tools:** Pandas, Matplotlib, Seaborn. All very important and useful tools for data analysis.
+
+# Conclusion 
+
+This project and by extension the [course](https://www.youtube.com/watch?v=wUSDVGivd-8&t=35072s) has taught me a lot about data analysis in general and using Python for it as well. It was a very fun and informative course and I enjoyed myself a lot when it came to actually putting those learned skills to the test. I'm looking forward to using these skills more as I continue to learn and dive deeper into Machine Learning and Data Analytics.
